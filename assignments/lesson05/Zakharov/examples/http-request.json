@@ -1,0 +1,12 @@
+{
+  "model": "local-model",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Ответь одним словом: сколько будет 2 + 2?"
+    }
+  ],
+  "temperature": 0.2,
+  "max_tokens": 64,
+  "stream": false
+}
