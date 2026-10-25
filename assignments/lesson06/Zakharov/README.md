@@ -4,6 +4,16 @@ C++17 CLI-клиент для многоходового диалога с ло�
 HTTP API `llama-server`. Клиент хранит историю в `std::vector<Message>`, считает токены до
 генерации, сокращает старую историю и печатает статистику `usage`.
 
+## Lesson 06: работа coding agent
+
+Проект из Lesson 05 был проанализирован, собран и протестирован учебным агентом
+из `assignments/lesson06/agent.py`. Единственное принятое изменение кода — ключ `/EHsc`
+для MSVC. Он устраняет предупреждение `C4530` об обработке исключений.
+
+Полная хронология tool calls, найденные проблемы, принятые и отклонённые
+предложения, а также ответы на вопросы задания приведены в
+[`AGENT_REPORT.md`](AGENT_REPORT.md).
+
 ## Проверенное окружение
 
 - Windows 10 Pro 22H2, build 19045, x64;
@@ -47,7 +57,7 @@ curl.exe --fail-with-body --max-time 180 http://127.0.0.1:8080/v1/chat/completio
 `FetchContent` загружает закреплённые `nlohmann_json v3.11.3` и HTTP-библиотеку
 `cpp-httplib v0.18.3`. HTTPS клиенту не нужен: сервер слушает loopback HTTP-адрес.
 
-Из `assignments/lesson05/Zakharov/`:
+Из `assignments/lesson06/Zakharov/`:
 
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug

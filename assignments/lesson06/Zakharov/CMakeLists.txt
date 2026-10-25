@@ -35,6 +35,7 @@ target_link_libraries(model_chat_core
 add_executable(model_chat src/main.cpp)
 target_link_libraries(model_chat PRIVATE model_chat_core)
 if(MSVC)
+    target_compile_options(model_chat_core PUBLIC /EHsc)
     target_compile_options(model_chat PRIVATE /utf-8)
 endif()
 
