@@ -1,0 +1,10 @@
+{
+  "server_url": "http://127.0.0.1:8080",
+  "model": "local-model",
+  "context_size": 1024,
+  "max_tokens": 64,
+  "temperature": 0.2,
+  "connect_timeout_seconds": 5,
+  "request_timeout_seconds": 180,
+  "system_prompt": "You are a concise assistant. Answer in the language used by the user."
+}

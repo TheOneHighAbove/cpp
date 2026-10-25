@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Два."
+      }
+    }
+  ],
+  "created": 1792514222,
+  "model": "local-model",
+  "system_fingerprint": "b11755-704366d76",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 45,
+    "total_tokens": 49,
+    "prompt_tokens_details": {
+      "cached_tokens": 5
+    }
+  },
+  "id": "chatcmpl-QL4e3B78TTZNxgswVTKnymyfuP6RH6db",
+  "timings": {
+    "cache_n": 5,
+    "prompt_n": 40,
+    "prompt_ms": 198.274,
+    "prompt_per_token_ms": 4.95685,
+    "prompt_per_second": 201.74102504614825,
+    "predicted_n": 4,
+    "predicted_ms": 56.243,
+    "predicted_per_token_ms": 18.747666666666667,
+    "predicted_per_second": 53.33997119641555
+  }
+}
